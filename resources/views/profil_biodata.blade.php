@@ -56,10 +56,11 @@
                             <h5 class="card-header bg-info">Data Subjektif</h5>
                             <div class="card-body">
 
-                                {{-- @foreach ($biodata as $b)
-                                    @foreach ($biodata->subjektif()->get as $subjektif)
+                                @foreach ($biodata->with('subjektifs')->get() as $biodata)
+                                    @foreach ($biodata->subjektifs as $subjektif)
+                                        <p>{{ $subjektif->biodata_id }}</p>
                                     @endforeach
-                                @endforeach --}}
+                                @endforeach
 
                                 <a href="">Buat Baru</a>
                             </div>
