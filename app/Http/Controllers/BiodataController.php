@@ -59,7 +59,8 @@ class BiodataController extends Controller
     public function show($id)
     {
         //
-        $biodata = Biodata::where('id', $id)->first();
+        $biodata = Biodata::with('subjektif')->where('id', $id)->first();
+        // dd($biodata);
         return view('profil_biodata', compact('biodata'));
     }
 
