@@ -57,91 +57,93 @@
                             <div class="card-body">
 
                                 @foreach ($biodata->subjektif as $s)
-                                
-                                <div class="mb-3 row">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Id subjektif</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->biodata_id }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">Keluhan</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->keluhan }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">riwayat penyakit</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->riwayat_penyakit }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">riwayat penyakit keluarga</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->riwayat_penyakit_keluarga }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">menikah ke</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->menikah_ke }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">usia menikah</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->usia_menikah }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">lama menikah</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->lama_menikah }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">HPHT</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->HPHT }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">menarche</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->menarche }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">lama haid</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->lama_haid }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">siklus haid</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->siklus_haid }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">warna</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->warna }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">flour albus</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->flour_albus }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">riwayat kehamilan</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->riwayat_kehamilan }}</label>
-                                    </div>
-                        
-                                    <label for="staticEmail" class="col-sm-2 col-form-label">riwayat kb</label>
-                                    <div class="col-sm-10">
-                                        <label class="col-sm-2 col-form-label">{{ $s->riwayat_kb }}</label>
-                                    </div>
-                                    
-                                    <div>
-                                        <a scope="col" href="{{ route('subjektif.edit', $s->id) }}" class="btn btn-primary mr-2">Edit</a>
-                                    </div>
-                                    
-                                    <a scope="col" href="{{ route('subjektif.edit', $s->id) }}" class="btn btn-primary mr-2">Tambah Data Baru</a>
-                                </div>
-                                    
+                                    <div class="mb-3 row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Id subjektif</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->biodata_id }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Keluhan</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->keluhan }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">riwayat penyakit</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->riwayat_penyakit }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">riwayat penyakit
+                                            keluarga</label>
+                                        <div class="col-sm-10">
+                                            <label
+                                                class="col-sm-2 col-form-label">{{ $s->riwayat_penyakit_keluarga }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">menikah ke</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->menikah_ke }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">usia menikah</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->usia_menikah }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">lama menikah</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->lama_menikah }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">HPHT</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->HPHT }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">menarche</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->menarche }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">lama haid</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->lama_haid }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">siklus haid</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->siklus_haid }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">warna</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->warna }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">flour albus</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->flour_albus }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">riwayat kehamilan</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->riwayat_kehamilan }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">riwayat kb</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $s->riwayat_kb }}</label>
+                                        </div>
+                                        < </div>
+                                            {{-- <div>
+                                                <a scope="col" href="{{ route('subjektif.edit', $s->id) }}"
+                                                    class="btn btn-primary mr-2">Edit</a>
+                                                <a scope="col" href="{{ route('subjektif.create', $s->id) }}"
+                                                    class="btn btn-primary mr-2">Tambah Data Baru</a>
+                                            </div> --}}
                                 @endforeach
+                                <a scope="col" href="{{ route('subjektif.create') }}"
+                                    class="btn btn-primary mr-2">Tambah Data Baru</a>
                             </div>
                         </div>
                     </div>

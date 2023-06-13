@@ -51,7 +51,7 @@ class SubjektifController extends Controller
             'riwayat_kb' => $request->inputriwayat_kb,
         ]);
 
-        return redirect()->route('biodata.index');
+        return redirect()->route('biodata.show');
     }
 
     /**

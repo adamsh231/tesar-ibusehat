@@ -1,5 +1,6 @@
-@extends('layouts.app')
-@section('content')
+@extends('template')
+
+@section('title')
     <div class="container">
         <div class="row">
             <div class="col">
@@ -13,9 +14,12 @@
             </div>
         </div>
     </div>
+@endsection
+@section('breadcrumbs')
     <table class="table">
         <thead>
             <tr>
+                <th scope="col">ID</th>
                 <th scope="col">Nama</th>
                 <th scope="col">Umur</th>
                 <th scope="col">agama</th>
@@ -36,6 +40,7 @@
         <tbody class="table-group-divider">
             @foreach ($biodata as $b)
                 <tr>
+                    <td scope="col">{{ $b->id }}</td>
                     <td scope="col">{{ $b->nama }}</td>
                     <td scope="col">{{ $b->umur }}</td>
                     <td scope="col">{{ $b->agama }}</td>

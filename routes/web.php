@@ -17,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+
 
 Route::resource('biodata', BiodataController::class);
 Route::resource('subjektif', SubjektifController::class);

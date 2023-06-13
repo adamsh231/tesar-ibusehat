@@ -6,24 +6,24 @@
                 <h3>Tambah subjektif</h3>
             </div>
             <div class="card-body">
-                <a href="{{ route('subjektif.index') }}" class="btn btn-primary">Kembali</a>
+                {{-- <a href="{{ route('biodata.show', $biodata->id) }}" class="btn btn-primary">Kembali</a> --}}
                 <form action="{{ route('subjektif.store') }}" method="POST">
                     @csrf
                     <ul class="list-group">
-                        Nama <input type="text" name="inputnama" required>
-                        Umur <input type="text" name="inputumur" required>
-                        Agama <input type="text" name="inputagama" required>
-                        Pendidikan <input type="text" name="inputpendidikan" required>
-                        Pekerjaan <input type="text" name="inputpekerjaan" required>
-                        Alamat <input type="text" name="inputalamat" required>
-                        Nomer telpon <input type="text" name="inputnomer" required>
-                        Nama suami <input type="text" name="inputnama_suami" required>
-                        Umur suami <input type="text" name="inputumur_suami" required>
-                        Agama suami <input type="text" name="inputagama_suami" required>
-                        Pendidikan suami <input type="text" name="inputpendidikan_suami" required>
-                        Pekerjaan suami <input type="text" name="inputpekerjaan_suami" required>
-                        Alamat suami <input type="text" name="inputalamat_suami" required>
-                        Nomer suami <input type="text" name="inputnomer_suami" required>
+                        keluhan <input type="text" name="inputkeluhan" required>
+                        Riwayat Penyakit <input type="text" name="inputriwayat_penyakit" required>
+                        Riwayat Penyakit Keluarga <input type="text" name="inputriwayat_penyakit_keluarga" required>
+                        Menikah Ke <input type="number" name="inputmenikah_ke" required>
+                        Usia Menikah <input type="number" name="inputusia_menikah" required>
+                        Lama Menikah <input type="number" name="inputlama_menikah" required>
+                        HPHT <input type="date" name="inputHPHT" required>
+                        Menarche <input type="number" name="inputmenarche" required>
+                        Lama Haid <input type="number" name="inputlama_haid" required>
+                        Siklus Haid <input type="number" name="inputsiklus_haid" required>
+                        Warna <input type="text" name="inputwarna" required>
+                        Flour Albus <input type="text" name="inputflour_albus" required>
+                        Riwayat Kehamilan <input type="text" name="inputriwayat_kehamilan" required>
+                        Riwayat Kb <input type="text" name="inputriwayat_kb_suami" required>
                     </ul>
                     <input type="submit" value="Simpan Data" class="btn btn-success">
                 </form>

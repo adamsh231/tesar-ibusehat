@@ -30,5 +30,21 @@ class BiodataSeeder extends Seeder
             'alamat_suami'  => 'jl. Else',
             'nomer_suami'   => '082134678',
         ]);
+        Biodata::create([
+            'nama'  => 'anjani',
+            'umur'  => '22',
+            'agama' => 'islam',
+            'pendidikan'    => 'S1',
+            'pekerjaan' => 'Pegawai',
+            'alamat'    => 'jl. If or NOT',
+            'nomer_tlpn'    => '082132731',
+            'nama_suami'    => 'doni',
+            'umur_suami'    => '26',
+            'agama_suami'   => 'islam',
+            'pendidikan_suami'  => 'S1',
+            'pekerjaan_suami'   => 'Pengusaha',
+            'alamat_suami'  => 'jl. If or NOT',
+            'nomer_suami'   => '082134763',
+        ]);
     }
 }
