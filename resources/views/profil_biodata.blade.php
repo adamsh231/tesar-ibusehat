@@ -153,7 +153,130 @@
                         <div class="card-body">
                             <h5 class="card-header bg-info">Data Objektif</h5>
                             <div class="card-body">
+                                @foreach ($biodata->objektif as $o)
+                                    <div class="mb-3 row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">kesadaran</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->kesadaran }}</label>
+                                        </div>
 
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">tekanan_darah</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->tekanan_darah }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">suhu</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->suhu }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">nadi</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->nadi }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">respirasi</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->respirasi }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">bb</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->bb }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">tb</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->tb }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">kepala</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->kepala }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">rambut</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->rambut }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">muka</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->muka }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">mata</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->mata }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">hidung</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->hidung }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">telinga</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->telinga }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">mulut</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->mulut }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">leher</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->leher }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">dada</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->dada }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">abdomen</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->abdomen }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">leopold 1</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->leopold1 }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">leopold 2</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->leopold2 }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">leopold 3</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->leopold3 }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">leopold 4</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->leopold4 }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">genetalia</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->genetalia }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">eks_atas</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->eks_atas }}</label>
+                                        </div>
+
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">eks_bawah</label>
+                                        <div class="col-sm-10">
+                                            <label class="col-sm-2 col-form-label">{{ $o->eks_bawah }}</label>
+                                        </div>
+                                @endforeach
+                                <a scope="col" href="{{ route('subjektif.create') }}"
+                                    class="btn btn-primary mr-2">Tambah Data Baru</a>
                             </div>
                         </div>
                     </div>

@@ -30,6 +30,8 @@ return new class extends Migration
             $table->text('riwayat_kb');
             $table->timestamps();
 
+
+
             $table->foreign('biodata_id')->references('id')->on('biodatas')->onDelete('cascade');
         });
     }

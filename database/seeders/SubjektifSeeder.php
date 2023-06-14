@@ -16,7 +16,7 @@ class SubjektifSeeder extends Seeder
         //
 
         Subjektif::create([
-            'biodata_id' => '8',
+            'biodata_id' => '1',
             'keluhan' => 'Testing',
             'riwayat_penyakit' => 'Testing',
             'riwayat_penyakit_keluarga' => 'Testing',

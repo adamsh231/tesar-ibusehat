@@ -20,6 +20,18 @@ class Biodata extends Model
     }
 
     /**
+     * comments
+     *
+     * @return void
+     */
+    public function objektif()
+    {
+        return $this->hasMany(Objektif::class);
+    }
+
+
+
+    /**
      * fillable
      *
      * @var array

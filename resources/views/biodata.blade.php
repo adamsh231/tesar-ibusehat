@@ -1,6 +1,5 @@
-@extends('template')
-
-@section('title')
+@extends('layouts.app')
+@section('content')
     <div class="container">
         <div class="row">
             <div class="col">
@@ -14,8 +13,6 @@
             </div>
         </div>
     </div>
-@endsection
-@section('breadcrumbs')
     <table class="table">
         <thead>
             <tr>

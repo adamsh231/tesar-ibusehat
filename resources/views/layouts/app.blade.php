@@ -22,6 +22,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
+
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Ibu Sehat
                 </a>
@@ -34,7 +35,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item"><a href="" class="nav-link link-body-emphasis px-2 active"
+                                aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="{{ route('biodata.index') }}"
+                                class="nav-link link-body-emphasis px-2">Pasien</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -76,6 +81,7 @@
                 </div>
             </div>
         </nav>
+
 
         <main class="py-4">
             @yield('content')
