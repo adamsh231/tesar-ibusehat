@@ -110,4 +110,13 @@ class BiodataController extends Controller
 
         return redirect()->route('biodata.index');
     }
+
+    /*
+    *
+    */
+    public function back($id)
+    {
+        $biodata = Biodata::where('id', $id)->first();
+        return redirect('profil_biodata', compact('biodata'));
+    }
 }

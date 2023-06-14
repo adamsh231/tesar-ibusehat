@@ -80,6 +80,23 @@ class SubjektifController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $subjektif = Subjektif::find($id);
+        $subjektif->keluhan = $request->inputkeluhan;
+        $subjektif->riwayat_penyakit = $request->inputriwayat;
+        $subjektif->riwayat_penyakit_keluarga = $request->inputkeluarga;
+        $subjektif->menikah_ke = $request->inputmenikah_ke;
+        $subjektif->usia_menikah = $request->inputusia_menikah;
+        $subjektif->HPHT = $request->inputHPHT;
+        $subjektif->menarche = $request->inputmenarche;
+        $subjektif->lama_haid = $request->inputlama_haid;
+        $subjektif->siklus_haid = $request->inputsiklus_haid;
+        $subjektif->warna = $request->inputwarna;
+        $subjektif->flour_albus = $request->inputflour_albus;
+        $subjektif->riwayat_kehamilan = $request->inputriwayat_kehamilan;
+        $subjektif->riwayat_kb = $request->inputriwayat_kb;
+        $subjektif->save();
+        // return redirect()->route('biodata.show');
+
     }
 
     /**
@@ -88,5 +105,14 @@ class SubjektifController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /*
+    *
+    */
+    public function back($id)
+    {
+        $subjektif = Subjektif::where('id', $id)->first();
+        return redirect('profil_biodata', compact('subjektif'));
     }
 }

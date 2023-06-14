@@ -16,7 +16,7 @@ class Biodata extends Model
      */
     public function subjektif()
     {
-        return $this->hasMany(Subjektif::class);
+        return $this->hasOne(Subjektif::class);
     }
 
     /**
@@ -26,7 +26,7 @@ class Biodata extends Model
      */
     public function objektif()
     {
-        return $this->hasMany(Objektif::class);
+        return $this->hasOne(Objektif::class);
     }
 
 
