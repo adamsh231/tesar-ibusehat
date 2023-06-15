@@ -32,5 +32,23 @@ class SubjektifSeeder extends Seeder
             'riwayat_kehamilan' => 'Testing',
             'riwayat_kb' => 'Testing',
         ]);
+
+        Subjektif::create([
+            'biodata_id' => '2',
+            'keluhan' => 'Testing',
+            'riwayat_penyakit' => 'Testing',
+            'riwayat_penyakit_keluarga' => 'Testing',
+            'menikah_ke' => '4',
+            'usia_menikah' => '4',
+            'lama_menikah' => '4',
+            'HPHT' => '2023-06-01',
+            'menarche' => '4',
+            'lama_haid' => '4',
+            'siklus_haid' => '4',
+            'warna' => 'Testing',
+            'flour_albus' => 'Testing',
+            'riwayat_kehamilan' => 'Testing',
+            'riwayat_kb' => 'Testing',
+        ]);
     }
 }

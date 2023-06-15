@@ -35,6 +35,7 @@ class SubjektifController extends Controller
     {
         //
         Subjektif::create([
+            'biodata_id' => $request->inputbiodata,
             'keluhan' => $request->inputkeluhan,
             'riwayat_penyakit' => $request->inputriwayat_penyakit,
             'riwayat_keluarga' => $request->inputriwayat_penyakit_keluarga,
@@ -51,7 +52,7 @@ class SubjektifController extends Controller
             'riwayat_kb' => $request->inputriwayat_kb,
         ]);
 
-        return redirect()->route('biodata.show');
+        return redirect()->route('biodata.index');
     }
 
     /**
