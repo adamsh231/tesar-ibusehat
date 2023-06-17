@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\SubjektifController;
+use App\Http\Controllers\ObjektifController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -24,9 +25,14 @@ Route::get('/', function () {
 
 Route::resource('biodata', BiodataController::class);
 Route::resource('subjektif', SubjektifController::class);
+Route::resource('objektif', ObjektifController::class);
 
 Route::controller(SubjektifController::class)->group(function () {
     Route::get('/subjektif/create/{id}', 'create');
+});
+
+Route::controller(objektifController::class)->group(function () {
+    Route::get('/objektif/create/{id}', 'create');
 });
 
 Auth::routes();

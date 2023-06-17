@@ -6,12 +6,12 @@
                 <h3>Tambah subjektif</h3>
             </div>
             <div class="card-body">
-                <a href="{{url()->previous()}}" class="btn btn-primary">Kembali</a>
+                <a href="{{ url()->previous() }}" class="btn btn-primary">Kembali</a>
                 <form action="{{ route('subjektif.store') }}" method="POST">
                     @csrf
                     <ul class="list-group">
 
-                        <input type="hidden" value="{{$id}}" name="inputbiodata">
+                        <input type="hidden" value="{{ $id }}" name="inputbiodata">
                         keluhan <input type="text" name="inputkeluhan" required>
                         Riwayat Penyakit <input type="text" name="inputriwayat_penyakit" required>
                         Riwayat Penyakit Keluarga <input type="text" name="inputriwayat_penyakit_keluarga" required>

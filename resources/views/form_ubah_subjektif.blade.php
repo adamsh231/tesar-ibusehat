@@ -6,8 +6,8 @@
                 <h3>Tambah Biodata</h3>
             </div>
             <div class="card-body">
-                <a href="" class="btn btn-primary">Kembali</a>
-                <form action="{{ route('subjektif.update', $subjektif->id) }}" method="POST">
+                <a href="{{ url()->previous() }}" class="btn btn-primary">Kembali</a>
+                <form action="" method="POST">
                     @csrf
                     @method('PUT')
                     <ul class="list-group">

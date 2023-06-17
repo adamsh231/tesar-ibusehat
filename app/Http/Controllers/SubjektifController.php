@@ -22,8 +22,8 @@ class SubjektifController extends Controller
     public function index()
     {
         //
-        $subjektif = Subjektif::get();
-        return view('subjektif', compact('subjektif'));
+        // $subjektif = Subjektif::get();
+        // return view('subjektif', compact('subjektif'));
     }
 
     /**

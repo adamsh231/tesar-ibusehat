@@ -151,12 +151,11 @@
                                             <a scope="col"
                                                 href="{{ route('subjektif.edit', $biodata->subjektif->id ?? '') }}"
                                                 class="btn btn-primary mr-2">Edit</a>
-                                            {{-- <a scope="col" href="{{ route('subjektif.create', $s->id) }}"
-                                                    class="btn btn-primary mr-2">Tambah Data Baru</a> --}}
+                                            <a scope="col" href="{{ route('subjektif.create') }}/{{ $biodata->id }}"
+                                                class="btn btn-primary mr-2">Tambah Data Baru</a>
                                         </div>
 
-                                        <a scope="col" href="{{ route('subjektif.create') }}/{{$biodata->id}}"
-                                            class="btn btn-primary mr-2">Tambah Data Baru</a>
+
                                 </div>
                             </div>
                         </div>
@@ -310,8 +309,15 @@
                                             <label
                                                 class="col-sm-2 col-form-label">{{ $biodata->objektif->eks_bawah ?? '' }}</label>
                                         </div>
-                                        <a scope="col" href="{{ route('subjektif.create') }}"
-                                            class="btn btn-primary mr-2">Tambah Data Baru</a>
+                                        <div>
+                                            <a scope="col"
+                                                href="{{ route('subjektif.edit', $biodata->subjektif->id ?? '') }}"
+                                                class="btn btn-primary mr-2">Edit</a>
+
+                                            <a scope="col" href="{{ route('objektif.create') }}/{{ $biodata->id }}"
+                                                class="btn btn-primary mr-2">Tambah Data Baru</a>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
