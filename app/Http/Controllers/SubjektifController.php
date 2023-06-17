@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Biodata;
 use App\Models\Subjektif;
 use Illuminate\View\View;
 
@@ -9,6 +10,12 @@ use Illuminate\Http\Request;
 
 class SubjektifController extends Controller
 {
+
+    public function __invoke(Request $request)
+    {
+        return;
+    }
+
     /**
      * Display a listing of the resource.
      */
@@ -22,10 +29,11 @@ class SubjektifController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
+
         //
-        return view('form_tambah_subjektif');
+        return view('form_tambah_subjektif', ['id' => $request->id]);
     }
 
     /**
@@ -38,7 +46,7 @@ class SubjektifController extends Controller
             'biodata_id' => $request->inputbiodata,
             'keluhan' => $request->inputkeluhan,
             'riwayat_penyakit' => $request->inputriwayat_penyakit,
-            'riwayat_keluarga' => $request->inputriwayat_penyakit_keluarga,
+            'riwayat_penyakit_keluarga' => $request->inputriwayat_penyakit_keluarga,
             'menikah_ke' => $request->inputmenikah_ke,
             'usia_menikah' => $request->inputusia_menikah,
             'lama_menikah' => $request->inputlama_menikah,

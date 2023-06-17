@@ -25,6 +25,10 @@ Route::get('/', function () {
 Route::resource('biodata', BiodataController::class);
 Route::resource('subjektif', SubjektifController::class);
 
+Route::controller(SubjektifController::class)->group(function () {
+    Route::get('/subjektif/create/{id}', 'create');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

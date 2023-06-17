@@ -6,7 +6,7 @@
                 <h3>Tambah Biodata</h3>
             </div>
             <div class="card-body">
-                {{-- <a href="{{ route('biodata.back') $biodata->subjektif->id }}" class="btn btn-primary">Kembali</a> --}}
+                <a href="" class="btn btn-primary">Kembali</a>
                 <form action="{{ route('subjektif.update', $subjektif->id) }}" method="POST">
                     @csrf
                     @method('PUT')

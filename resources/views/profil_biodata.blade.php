@@ -155,7 +155,7 @@
                                                     class="btn btn-primary mr-2">Tambah Data Baru</a> --}}
                                         </div>
 
-                                        <a scope="col" href="{{ route('subjektif.create') }}"
+                                        <a scope="col" href="{{ route('subjektif.create') }}/{{$biodata->id}}"
                                             class="btn btn-primary mr-2">Tambah Data Baru</a>
                                 </div>
                             </div>

@@ -25,6 +25,7 @@ class Subjektif extends Model
      * @var array
      */
     protected $fillable = [
+        'biodata_id',
         'keluhan',
         'riwayat_penyakit',
         'riwayat_penyakit_keluarga',
