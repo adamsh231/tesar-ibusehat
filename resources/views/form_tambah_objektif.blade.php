@@ -13,15 +13,15 @@
 
                         <input type="hidden" value="{{ $id }}" name="inputbiodata">
                         kesadaran <input type="text" name="inputkesadaran" required>
-                        tekanan_darah <input type="text" name="inputtekanan_darah" required>
-                        suhu <input type="text" name="inputsuhu" required>
+                        tekanan_darah <input type="number" name="inputtekanan_darah" required>
+                        suhu <input type="number" name="inputsuhu" required>
                         nadi <input type="number" name="inputnadi" required>
-                        repirasi <input type="number" name="inputrepirasi" required>
+                        respirasi <input type="number" name="inputrespirasi" required>
                         bb <input type="number" name="inputbb" required>
-                        tb <input type="date" name="inputtb" required>
-                        kepala <input type="number" name="inputkepala" required>
-                        rambut <input type="number" name="inputrambut" required>
-                        muka <input type="number" name="inputmuka" required>
+                        tb <input type="number" name="inputtb" required>
+                        kepala <input type="text" name="inputkepala" required>
+                        rambut <input type="text" name="inputrambut" required>
+                        muka <input type="text" name="inputmuka" required>
                         mata <input type="text" name="inputmata" required>
                         hidung <input type="text" name="inputhidung" required>
                         telinga <input type="text" name="inputtelinga" required>
@@ -31,13 +31,13 @@
                         leher <input type="text" name="inputleher" required>
                         dada <input type="text" name="inputdada" required>
                         abdomen <input type="text" name="inputabdomen" required>
-                        leopold1 <input type="text" name="inputleopold1" required>
-                        leopold2 <input type="text" name="inputleopold2" required>
-                        leopold3 <input type="text" name="inputleopold3" required>
-                        leopold4 <input type="text" name="inputleopold4" required>
+                        leopold 1 <input type="text" name="inputleopold1" required>
+                        leopold 2 <input type="text" name="inputleopold2" required>
+                        leopold 3 <input type="text" name="inputleopold3" required>
+                        leopold 4 <input type="text" name="inputleopold4" required>
                         genetalia <input type="text" name="inputgenetalia" required>
-                        eks_atas <input type="text" name="inputeks_atas" required>
-                        eks_bawah <input type="text" name="inputeks_bawah" required>
+                        ekstrimitas atas <input type="text" name="inputeks_atas" required>
+                        ekstrimitas bawah <input type="text" name="inputeks_bawah" required>
                     </ul>
                     <input type="submit" value="Simpan Data" class="btn btn-success">
                 </form>

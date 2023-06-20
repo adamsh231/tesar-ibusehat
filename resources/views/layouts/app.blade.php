@@ -35,10 +35,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a href="" class="nav-link link-body-emphasis px-2 active"
-                                aria-current="page">Home</a></li>
-                        <li class="nav-item"><a href="{{ route('biodata.index') }}"
-                                class="nav-link link-body-emphasis px-2">Pasien</a>
+                        <li class="nav-item"><a href="{{ route('home') }}"
+                                class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+                        @can('isAdmin')
+                            <li class="nav-item"><a href="{{ route('biodata.index') }}"
+                                    class="nav-link link-body-emphasis px-2">Pasien</a>
+                            @endcan
+
                         </li>
                     </ul>
 

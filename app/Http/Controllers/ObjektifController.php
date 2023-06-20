@@ -59,6 +59,8 @@ class ObjektifController extends Controller
             'eks_atas' => $request->inputeks_atas,
             'eks_bawah' => $request->inputeks_bawah,
         ]);
+
+        return redirect()->route('biodata.index');
     }
 
     /**

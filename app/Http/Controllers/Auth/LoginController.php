@@ -12,16 +12,16 @@ class LoginController extends Controller
     public function redirectTo()
     {
         if (Auth::user()->role == 'admin') {
-            $this->redirectTo = route('biodata.index');
+            $this->redirectTo = route('home');
             return $this->redirectTo;
         } elseif (Auth::user()->role == 'bidan') {
-            $this->redirectTo = route('biodata.index');
+            $this->redirectTo = route('home');
             return $this->redirectTo;
         } elseif (Auth::user()->role == 'pegawai') {
-            $this->redirectTo = route('biodata.index');
+            $this->redirectTo = route('home');
             return $this->redirectTo;
         } else {
-            $this->redirectTo = route('biodata.index');
+            $this->redirectTo = route('home');
             return $this->redirectTo();
         }
     }

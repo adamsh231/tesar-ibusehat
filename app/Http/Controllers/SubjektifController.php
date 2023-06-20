@@ -42,7 +42,7 @@ class SubjektifController extends Controller
     public function store(Request $request)
     {
         //
-        Subjektif::create([
+        $subjektif = Subjektif::create([
             'biodata_id' => $request->inputbiodata,
             'keluhan' => $request->inputkeluhan,
             'riwayat_penyakit' => $request->inputriwayat_penyakit,
@@ -60,7 +60,7 @@ class SubjektifController extends Controller
             'riwayat_kb' => $request->inputriwayat_kb,
         ]);
 
-        return redirect()->route('biodata.index');
+        return redirect()->route('biodata.index'); //
     }
 
     /**
