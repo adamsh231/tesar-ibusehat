@@ -69,6 +69,8 @@
                                             {{ __('Forgot Your Password?') }}
                                         </a>
                                     @endif
+
+                                    <a href="{{ 'utama' }}">Kembali</a>
                                 </div>
                             </div>
                         </form>

@@ -19,6 +19,7 @@
                             @can('isAdmin')
                                 <a class="btn btn-primary" href="{{ route('biodata.index') }}" role="button">DATA PASIEN</a>
                             @endcan
+                            <a class="btn btn-primary" href="{{ route('checkup.index') }}" role="button">data chekup</a>
                             {{-- <a class="btn btn-primary" href="{{ route('pasien.index') }}">Pasien</a> --}}
                             <a class="btn btn-primary" href="#" role="button">JADWAL CHECKUP</a>
                             <a class="btn btn-primary" href="#" role="button">Link</a>

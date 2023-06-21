@@ -29,6 +29,16 @@ class Biodata extends Model
         return $this->hasOne(Objektif::class);
     }
 
+    /**
+     * comments
+     *
+     * @return void
+     */
+    public function checkup()
+    {
+        return $this->hasMany(Checkup::class);
+    }
+
 
 
     /**

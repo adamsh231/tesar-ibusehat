@@ -4,6 +4,7 @@ use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\SubjektifController;
 use App\Http\Controllers\ObjektifController;
+use App\Http\Controllers\CheckupController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -18,12 +19,40 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//template
+
+Route::get('/template', function () {
+    return view('template');
+});
+
+//landing page
 Route::get('/', function () {
     return view('utama');
 });
 
-Route::get('/landing', function () {
+//home
+Route::get('/utama', function () {
     return view('utama');
+});
+
+//checkup page
+Route::get('/jadwal_checkup', function () {
+    return view('jadwal_checkup');
+});
+
+//jadwal page
+Route::get('/jadwal', function () {
+    return view('jadwal');
+});
+
+//maintance
+Route::get('/maintance', function () {
+    return view('maintance');
+});
+
+//about
+Route::get('/about', function () {
+    return view('about');
 });
 
 //pasien data
@@ -32,16 +61,20 @@ Route::get('/landing', function () {
 
 //biodata routes
 Route::resource('biodata', BiodataController::class)->middleware('can:isAdmin');
-Route::resource('biodata', BiodataController::class)->only('show')->middleware('can:isPengurus');
+Route::resource('biodata', BiodataController::class)->only('show')->middleware('can:isSemua');
 
 
 //subjektif routes
 Route::resource('subjektif', SubjektifController::class)->middleware('can:isAdmin');
-Route::resource('subjektif', SubjektifController::class)->only('show')->middleware('can:isPengurus');
+Route::resource('subjektif', SubjektifController::class)->only('show')->middleware('can:isSemua');
 
 //objektif routes
 Route::resource('objektif', ObjektifController::class)->middleware('can:isAdmin');
-Route::resource('objektif', ObjektifController::class)->only('show')->middleware('can:isPengurus');
+Route::resource('objektif', ObjektifController::class)->only('show')->middleware('can:isSemua');
+
+//checkup routes
+Route::resource('checkup', CheckupController::class);
+
 
 Route::controller(SubjektifController::class)->group(function () {
     Route::get('/subjektif/create/{id}', 'create');
@@ -50,6 +83,10 @@ Route::controller(SubjektifController::class)->group(function () {
 
 Route::controller(objektifController::class)->group(function () {
     Route::get('/objektif/create/{id}', 'create');
+});
+
+Route::controller(CheckupController::class)->group(function () {
+    Route::get('/checkup/create/{id}', 'create');
 });
 
 Auth::routes();
