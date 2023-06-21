@@ -14,10 +14,8 @@ class CheckupController extends Controller
      */
     public function index(Request $request)
     {
-        //
-        $checkup = Biodata::findOrFail($request)->checkup;
-
-        dd($checkup);
+        // $checkup = Biodata::find($id);
+        // return view('checkup.show', compact('checkup'));
     }
 
     /**
@@ -58,7 +56,7 @@ class CheckupController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
         //
         $checkup = Biodata::findOrFail($id)->checkup;

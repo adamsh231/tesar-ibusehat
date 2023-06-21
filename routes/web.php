@@ -75,6 +75,8 @@ Route::resource('objektif', ObjektifController::class)->only('show')->middleware
 //checkup routes
 Route::resource('checkup', CheckupController::class);
 
+// Route::get('checkup/{id}', 'CheckupController@index');
+
 
 Route::controller(SubjektifController::class)->group(function () {
     Route::get('/subjektif/create/{id}', 'create');

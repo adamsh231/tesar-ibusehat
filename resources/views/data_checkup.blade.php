@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="{{ route('checkup.create') }}" class="btn btn-primary">Tambah Data</a>
+                <a href="{{ route('checkup.create') }}/{{ $checkup }}" class="btn btn-primary">Tambah Data</a>
                 <a href="{{ route('biodata.index') }}" class="btn btn-primary">Kembali</a>
             </div>
         </div>
