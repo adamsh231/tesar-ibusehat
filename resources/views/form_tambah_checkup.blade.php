@@ -12,21 +12,22 @@
                     <ul class="list-group">
 
                         <input type="hidden" value="{{ $id }}" name="inputbiodata">
-                        Tanggal Checkup <input type="text" name="inputtgl" required>
+                        Tanggal Checkup <input type="date" name="inputtgl" required>
                         keluhan <input type="text" name="inputkeluhan" required>
                         tekanan <input type="number" name="inputtekanan" required>
                         berat <input type="number" name="inputberat" required>
                         tinggi <input type="number" name="inputtinggi" required>
                         letak <input type="text" name="inputletak" required>
                         djj <input type="number" name="inputdjj" required>
+                        
                         Kaki<div class="form-check">
-                            <input class="form-check-input" type="radio" name="inputkaki" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" value="+" name="inputkaki" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 +
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="inputkaki" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" value="-" name="inputkaki" id="flexRadioDefault2" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
                                 -
                             </label>
@@ -35,7 +36,7 @@
                         tindakan <input type="text" name="inputtindakan" required>
                         nasihat <input type="text" name="inputnasihat" required>
                         keterangan <input type="text" name="inputketerangan" required>
-                        jadwal kembali <input type="text" name="inputjadwal" required>
+                        jadwal kembali <input type="date" name="inputjadwal" required>
                     </ul>
                     <input type="submit" value="Simpan Data" class="btn btn-success">
                 </form>

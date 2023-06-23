@@ -14,14 +14,7 @@ class LoginController extends Controller
         if (Auth::user()->role == 'admin') {
             $this->redirectTo = route('home');
             return $this->redirectTo;
-        } elseif (Auth::user()->role == 'bidan') {
-            $this->redirectTo = route('home');
-            return $this->redirectTo;
-        } elseif (Auth::user()->role == 'pegawai') {
-            $this->redirectTo = route('home');
-            return $this->redirectTo;
-        } else {
-            $this->redirectTo = route('home');
+        } else {$this->redirectTo = route('home');
             return $this->redirectTo();
         }
     }

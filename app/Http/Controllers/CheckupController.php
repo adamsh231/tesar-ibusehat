@@ -14,8 +14,9 @@ class CheckupController extends Controller
      */
     public function index(Request $request)
     {
-        // $checkup = Biodata::find($id);
-        // return view('checkup.show', compact('checkup'));
+        $checkup = Checkup::with('biodata')->where('biodata_id', $request->id)->get();
+        // dd($checkup);
+        return view('data_checkup', ['cp' => $checkup, 'biodata_id' => $request->id]);
     }
 
     /**
@@ -50,7 +51,7 @@ class CheckupController extends Controller
             'jadwal_kembali' => $request->inputjadwal,
         ]);
 
-        return redirect()->route('biodata.index');
+        return redirect()->route('checkup.index', ["id" => $request->inputbiodata]);
     }
 
     /**
@@ -59,9 +60,9 @@ class CheckupController extends Controller
     public function show($id)
     {
         //
-        $checkup = Biodata::findOrFail($id)->checkup;
+        // $checkup = Biodata::findOrFail($id)->checkup;
         // dd($checkup);
-        return view('data_checkup', compact('checkup'));
+        return view('data_checkup');
     }
 
     /**

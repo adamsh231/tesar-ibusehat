@@ -73,7 +73,11 @@ Route::resource('objektif', ObjektifController::class)->middleware('can:isAdmin'
 Route::resource('objektif', ObjektifController::class)->only('show')->middleware('can:isSemua');
 
 //checkup routes
+Route::controller(CheckupController::class)->group(function(){
+    Route::get('/checkup/{id}', 'index');
+});
 Route::resource('checkup', CheckupController::class);
+
 
 // Route::get('checkup/{id}', 'CheckupController@index');
 

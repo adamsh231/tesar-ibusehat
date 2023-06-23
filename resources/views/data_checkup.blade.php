@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="{{ route('checkup.create') }}/{{ $checkup }}" class="btn btn-primary">Tambah Data</a>
+                <a href="{{ route('checkup.create') }}/{{ $biodata_id }}" class="btn btn-primary">Tambah Data</a>
                 <a href="{{ route('biodata.index') }}" class="btn btn-primary">Kembali</a>
             </div>
         </div>
@@ -11,7 +11,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">id</th>
+                
                 <th scope="col">biodata id</th>
                 <th scope="col">tanggal checkup</th>
                 <th scope="col">keluhan</th>
@@ -31,9 +31,8 @@
         <tbody class="table-group-divider">
 
 
-            @foreach ($checkup as $c)
+            @foreach ($cp as $c)
                 <tr>
-                    <td>{{ $c->biodata->nama }}</td>
                     <td>{{ $c->biodata_id }}</td>
                     <td>{{ $c->tgl }}</td>
                     <td>{{ $c->keluhan }}</td>

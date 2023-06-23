@@ -79,8 +79,8 @@
                         </ul>
                     </td>
                     <td>
-                        <a href="{{ route('checkup.show', $b->id) }}" class="btn btn-primary mr-2">Chekup</a>
-                        <a href="{{ route('checkup.create', $b->id) }}" class="btn btn-primary mr-2">Tambah Data
+                        <a href="{{ route('checkup.index') }}/{{ $b->id }}" class="btn btn-primary mr-2">Chekup</a>
+                        {{-- <a href="{{ route('checkup.create', $b->id) }}" class="btn btn-primary mr-2">Tambah Data --}}
                             Checkup</a>
                     </td>
                 </tr>
